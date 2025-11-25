@@ -9,7 +9,7 @@ The API allows you to **create, read, update, and delete products**, where the *
 
 - FastAPI backend
 - SQLAlchemy ORM
-- Postgres (or any DB you configure)
+- Postgres (or any DB you configure)(Install Postgres)
 - Full CRUD operations
 - Client-supplied product ID (no auto-increment)
 - Easy testing via **Swagger** or **Postman**
