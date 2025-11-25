@@ -211,6 +211,179 @@ class Product(BaseModel):
 ```
 
 ---
+# 🎨 Frontend (React) – Product Management UI
+
+This is the **frontend UI** for the Product Management application.  
+It communicates with the FastAPI backend running at:
+
+```
+http://localhost:8000
+```
+
+The frontend is built using **React**, **Axios**, and standard CSS (no Tailwind).
+
+---
+
+## 🚀 Features
+
+- View all products  
+- Get product by ID  
+- Add new products  
+- Update existing products  
+- Delete products  
+- Clean UI  
+- Axios-based API communication  
+- Fully connected to backend via `proxy` in package.json
+
+---
+
+## 📁 Project Structure
+
+```
+frontend/
+│
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   ├── index.css
+│   ├── TaglineSection.js
+│   └── TaglineSection.css
+│
+├── package.json
+└── README.md (optional)
+```
+
+### 🔍 File Breakdown
+
+#### **public/index.html**
+Main HTML template where the React app mounts on the `<div id="root"></div>` element.
+
+---
+
+#### **src/index.js**
+Entry point of the React application.  
+Renders `<App />` into the root element.
+
+---
+
+#### **src/index.css**
+Global styles applied across the application.
+
+---
+
+#### **src/App.js**
+Main component that:
+- Contains the UI structure
+- Calls backend APIs using Axios
+- Renders product list / forms
+
+---
+
+#### **src/App.css**
+Styles specific to components in `App.js`.
+
+---
+
+#### **src/TaglineSection.js**
+A standalone React component that renders a tagline or header section.
+
+---
+
+#### **src/TaglineSection.css**
+Styles only for the `TaglineSection` component.
+
+---
+
+# 📦 Install Dependencies
+
+Make sure you're in the `frontend` folder:
+
+```bash
+cd frontend
+npm install
+```
+
+This installs:
+- react
+- react-dom
+- axios
+- react-scripts
+
+---
+
+# ▶️ Run the Frontend
+
+```bash
+npm start
+```
+
+The app will open at:
+
+```
+http://localhost:3000
+```
+
+Proxy is configured in `package.json`, so API calls automatically forward to:
+
+```
+http://localhost:8000
+```
+
+---
+
+# 🔌 Backend Connection
+
+The `package.json` includes:
+
+```json
+"proxy": "http://localhost:8000"
+```
+
+This allows Axios requests like:
+
+```js
+axios.get("/products");
+```
+
+without writing the full backend URL.
+
+---
+
+# 🤝 Requirements
+
+- Node.js v16+  
+- npm v8+  
+- Backend running at `localhost:8000`
+
+---
+
+# ⭐ Notes
+
+- `node_modules/` is intentionally ignored (not pushed to GitHub).
+- All API calls use Axios.
+- UI is simple and minimal for easy understanding.
+
+---
+
+# 🧩 Useful Scripts
+
+```bash
+npm start       # Start dev server
+npm run build   # Create production build
+npm test        # Run tests (if added)
+```
+
+---
+
+# 🎉 Conclusion
+
+This frontend works seamlessly with your FastAPI backend to provide a clean and fully functional Product Management interface.
+
+
 
 # 🤝 Contributing
 
