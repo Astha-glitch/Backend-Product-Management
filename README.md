@@ -14,6 +14,7 @@ The API allows you to **create, read, update, and delete products**, where the *
 - Client-supplied product ID (no auto-increment)
 - Easy testing via **Swagger** or **Postman**
 - Clean structure and proper error handling
+-React Frontend
 
 ---
 
@@ -27,6 +28,23 @@ project/
 │── schemas.py
 │── requirements.txt
 └── README.md
+
+```
+frontend/
+│
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   ├── index.css
+│   ├── TaglineSection.js
+│   └── TaglineSection.css
+│
+├── package.json
+└── README.md (optional)
 ```
 
 ---
