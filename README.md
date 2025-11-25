@@ -28,8 +28,6 @@ project/
 │── schemas.py
 │── requirements.txt
 └── README.md
-
-```
 frontend/
 │
 ├── public/
